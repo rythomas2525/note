@@ -1,5 +1,4 @@
 const path = require("path")
-var notesData = require("../data/notesData")
 var db = require("../db/db.json")
 
 
@@ -15,6 +14,10 @@ module.exports = function (app) {
         res.json(true)
 
 
-    })
+    });
+    // app.delete('/api/notes', function (req, res) {
+    //     res.send('Got a DELETE request at /user')
+    // })
+
 
 }
