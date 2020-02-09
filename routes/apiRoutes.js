@@ -11,7 +11,8 @@ module.exports = function (app) {
     });
 
     app.post("/api/notes", function (req, res) {
-
+        db.push(req.body)
+        res.json(true)
 
 
     })
