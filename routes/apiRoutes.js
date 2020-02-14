@@ -35,7 +35,7 @@ module.exports = function (app) {
 
     app.delete("/api/notes/:id", function (req, res) {
 
-        var chosen = req.params.db;
+        var chosen = req.params.id;
 
 
 
@@ -53,7 +53,7 @@ module.exports = function (app) {
             db[i].id = i.toString();
         }
 
-        console.log(db);
+
 
 
 
